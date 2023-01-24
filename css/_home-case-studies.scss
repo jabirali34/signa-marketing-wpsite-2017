@@ -1,0 +1,83 @@
+
+
+
+#new-case-studies-wrapper {
+    // margin-top: -8px !important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    // padding: 80px;
+
+    @media (max-width: 768px) {
+        // padding: 60px 40px;
+    }
+
+
+    .case-study-container {
+        padding: 80px 80px 80px;
+
+        @media (max-width: 460px) {
+            padding: 60px 20px 60px;
+        }
+    }
+
+    img {
+        margin: 0px;
+        max-width: 100%;
+        width: 370px;
+        display: inline-flex;
+        padding: 15px;
+
+        @media (max-width: 1310px) {
+            width: 290px;
+        }
+
+        @media (max-width: 1068px) {
+            width: 250px;
+        }
+    }
+
+    h2 {
+        margin-bottom: 60px;
+        font-size: 55px;
+
+        @media (max-width: 560px) {
+            font-size: 43px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 380px) {
+            font-size: 1.895em;
+        }
+    }
+
+    a.home-cta-case-study {
+        margin-top: 60px;
+
+        @media (max-width: 450px) {
+            padding: 17px 40px;
+        }
+
+        &:focus {
+            background-color: $white;
+        }
+    }
+}
+
+.no-webp #new-case-studies-wrapper {
+    background-image: url(/wp-content/themes/signa-2017/images/new-case-studies-home-bg.jpg);
+}
+
+.webp #new-case-studies-wrapper {
+    background-image: url(/wp-content/themes/signa-2017/images/webp/new-case-studies-home-bg.webp);
+}
+
+@media (max-width: 599px) {
+    .case-study-container h2 {
+      font-size: 38px !important;
+    }
+    .case-study-container {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  }

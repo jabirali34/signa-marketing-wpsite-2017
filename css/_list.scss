@@ -1,0 +1,98 @@
+ul {
+  padding: 0;
+  margin: 0;
+}
+main li {
+  margin-bottom: 10px;
+  font-weight:300;
+}
+main li:last-child {
+  margin-bottom: 0px;
+}
+ul.orange-check {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+}
+li.orange-check {
+  background: url(/wp-content/uploads/orange-check.png) no-repeat left top;
+  padding: 0px 0 20px 40px;
+  color: inherit;
+  font-weight: 300;
+  background-size: 20px;
+  line-height: 1.3;
+  list-style: none;
+  background-position: left 3px;
+}
+ul.white-check {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+}
+li.white-check {
+  background: url(/wp-content/uploads/white-check.png) no-repeat left top;
+  padding: 0px 0 26px 40px;
+  color: #fff;
+  font-weight: 300;
+  background-size: 26px;
+  line-height: 1.3;
+  list-style: none;
+}
+ul.green-check {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 40px;
+}
+li.green-check {
+  background: url(/wp-content/uploads/green-check.png) no-repeat left top;
+  padding: 0px 0 20px 40px;
+  color: #fff;
+  font-weight: 300;
+  background-size: 20px;
+  line-height: 1.3;
+  list-style: none;
+}
+
+.green-check,
+.orange-check {
+  text-align: left;
+}
+
+ul.cs-service-completed {
+  margin: 1em 1em 0em 0em;
+  padding-left: 20px;
+  margin-top: 0em;
+}
+
+
+.blog-entry-content {
+
+  ul {
+    padding-left: 40px;
+    margin-bottom: 25px;
+
+    li {
+      margin-bottom: 15px;
+      font-weight: 300 !important;
+      
+      &:last-of-type {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    margin-bottom: 5px;
+  }
+}
+
+ol#mobileTabsItems li a {
+  padding-left: 10px;
+}

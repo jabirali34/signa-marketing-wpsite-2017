@@ -1,0 +1,99 @@
+@import "critical/colors";
+
+@import "aos";
+@import "featured-blog-podcast";
+@import "page-digital-marketing";
+@import "list";
+@import "media";
+@import "forms";
+@import "pop-up";
+@import "testimonials";
+@import "search";
+@import "footer";
+@import "minor-page";
+@import "work-with-us";
+
+
+
+.home-banner-new {
+  background: url(/wp-content/uploads/banner-hero-home.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+}
+
+.blog-entry-content p {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.9;
+  font-size: 20px;
+  color: #1a1a1a;
+  overflow-wrap: break-word;
+  margin-bottom: 25px;
+}
+
+.blog-entry-content h2 {
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+
+.blog-entry-content h3 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.blog-entry-content ul li {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 460px) {
+  .competitive-analysis-wrapper a.btn-white {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.f-content-row.bg-ltblue a {
+  color: #fff;
+}
+
+.f-content-row.blue-border-bottom {
+  margin-bottom: 0;
+  padding-bottom: 80px;
+  padding-top: 80px;
+  margin-top: 0;
+}
+.f-content-row.blue-border-bottom:first-child {
+  padding-top: 0;
+  padding-bottom: 80px;
+  margin-top: 0;
+}
+.f-content-row.blue-border-bottom:last-child {
+  padding-top: 80px;
+  margin-top: 0;
+  padding-bottom: 0;
+  border: 0;
+}
+
+.f-content-container.amp-sections .f-content-row.blue-border-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .f-content-row.bg-white .blue-border-bottom {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .f-content-row.blue-border-bottom:last-child {
+    padding-bottom: 0;
+    padding-top: 60px;
+  }
+  .f-content-row.blue-border-bottom:first-child {
+    padding-top: 0;
+    padding-bottom: 60px;
+    margin-top: 0;
+  }
+}
+.f-content-row.bg-ltblue a:hover {
+  color: #1e425d;
+}

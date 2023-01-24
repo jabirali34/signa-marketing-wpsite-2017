@@ -1,0 +1,288 @@
+/*
+  Responsive Image with Set Aspect Ratio
+  Thanks: http://daverupert.com/2012/04/uncle-daves-ol-padded-box/
+*/
+.img-aspect-16-9 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 */
+}
+.img-aspect-4-3 {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 0;
+  padding-bottom: 75%; /* 4:3 */
+}
+.img-aspect-square {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 0;
+  padding-bottom: 100%; /* 4:3 */
+}
+
+.img-footer-badge {
+  width: 132px;
+  height: auto;
+}
+
+.compare-images {
+  padding-right: 25px;
+
+  &:last-of-type {
+    padding-right: 0px;
+    padding-left: 25px;
+  }
+}
+
+//using on the simple service pages
+.img-flipflop {
+  max-width: 517px;
+  max-height: 350px;
+  max-width: 100%;
+}
+.img-flipflop.centered {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+
+/* blog social share */
+.social-share-fixed {
+  position: absolute;
+  bottom: -200px;
+  right: 0px;
+
+  ul.social-share-list li {
+    height: 40px;
+    width: 40px;
+    display: block;
+
+    &.social-share-hide {
+      color: $black;
+      cursor: pointer;
+    }
+
+    a img {
+      width: 40px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.dm-switch {
+  float: right;
+  width: 517px;
+  max-width: 100%;
+}
+
+.f-content-row:nth-child(2n + 1) img.dm-switch {
+  float: left;
+}
+
+.cs-img-wd {
+  width: 517px;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .dm-switch {
+    float: none;
+    max-width: 100%;
+    width: auto;
+  }
+  .cs-img-wd {
+    width: auto;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .vs-image {
+    margin-bottom: 35px;
+  }
+}
+
+// .img-clutch {
+//   margin-top: 15px;
+//   max-width: 190px;
+// }
+
+.fixed-social-share {
+  position: fixed;
+  right: 20%;
+  top: 200px;
+}
+
+.fixed-social-share-bottom {
+  position: absolute;
+  right: 0px;
+}
+
+@media (max-width: 1800px) {
+  .fixed-social-share {
+    right: 15%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .fixed-social-share {
+    right: 7.5%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .social-share-fixed {
+    display: none;
+  }
+}
+
+.vso-image {
+  padding-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .social-share-fixed {
+    display: none;
+  }
+  .vso-image {
+    width: 100%;
+    padding: 0px 50px;
+    margin-bottom: 50px;
+  }
+}
+
+// social share mobile
+
+.social-share-mobile {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .social-share-mobile {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    z-index: 9999;
+  }
+
+  ul.ss-list-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+      flex: 1 1 0;
+      list-style: none;
+      height: 35px;
+
+      a {
+        width: 100%;
+        display: block;
+      }
+
+      &:nth-child(2) {
+        background: #598dca;
+      }
+
+      &:nth-child(3) {
+        background: #527fa4;
+      }
+
+      &:nth-child(4) {
+        background: #d95032;
+      }
+
+      &:first-of-type {
+        background: #3a589b;
+      }
+
+      &:last-of-type {
+        background: #007ab9;
+      }
+
+      img {
+        width: 35px;
+      }
+    }
+  }
+}
+
+.recent-post-img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%;
+  overflow: hidden;
+
+  .recent-post-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .recent-post-img-container {
+    padding-top: 56.25%;
+  }
+}
+
+.blog-prev-img-container {
+  position: relative;
+  height: 0px;
+  padding-top: 70%;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.post-prev-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+// media
+.recent-post-img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 66.66%;
+  overflow: hidden;
+
+  .recent-post-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 56.25%;
+  }
+}

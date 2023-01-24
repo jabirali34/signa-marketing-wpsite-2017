@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$font-stack: 'Poppins', sans-serif;
+
+body {
+  font: 1.188em $font-stack; // Base font size 19px
+}
+
+p {
+  font-size: inherit;
+  font-weight: 300;
+  margin: 0px;
+
+  &.value {
+    text-align: center;
+    color: $blue;
+    font: 300 1.158em $font-stack;
+  }
+}
+
+h2 {
+  font-size: 42px;
+
+  &.heading {
+    font: 700 2rem $font-stack;
+    text-align: center;
+    color: #1e425d;
+  }
+
+  &.section-title {
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+
+@media(max-width: 768px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  h2.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+
+h4 {
+  color: inherit;
+
+  &>span.big-org {
+    color: $orange;
+    font-size: 72px;
+    line-height: 1;
+    font-weight: 300;
+  }
+
+  &>span>.svg-inline--fa.fa-w-14 {
+    width: 0.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  h1.home-heading {
+    font-size: 2rem;
+  }
+
+  h2.heading {
+    font-size: 3.8vw;
+  }
+
+  p.value {
+    font-size: 1.474em;
+
+  }
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+  text-align: center;
+}
+
+
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.entry-content p,
+.f-content-row p,
+.global-row p {
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+
+.ff-list-title {
+  margin: 15px 0px;
+}
+
+.cs-supporting-title {
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 0.3em;
+  margin-top: 0px;
+  font-size: 1.895em;
+}
+
+@media(max-width: 768px) {
+  .cs-supporting-title {
+    font-size: 32px;
+  }
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+a {
+  color: #1e425d;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #1e425d;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
+.mobile-phone-number-container {
+  height: 34px;
+}
+
+div#mobile-phone-number {
+  background-color: #3878a8;
+  text-align: center;
+  padding: 3px 0px;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+}
+
+div#mobile-phone-number a {
+  color: #fff;
+  text-decoration: none;
+  /* text-align: center; */
+  font-family: 'Segoe', Arial, Helvetica, 'Helvetica Neue', 'San Francisco', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+// div#mobile-phone-number a:before {
+//   font-family: "Font Awesome 5 Free";
+//   content: "\f095";
+//   padding-top: 7px;
+//   position: bottom;
+//   margin-right: 5px;
+// }
+
+
+@media (min-width: 1180px) {
+  div#mobile-phone-number {
+    display: none;
+  }
+
+  .mobile-phone-number-container {
+    display: none;
+  }
+}
+
+
+
+@media (max-width: 1180px) {
+  h2.heading {
+    font-size: 2.7rem;
+  }
+
+  .home-service a {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+div.icon-fonts a {
+  text-decoration: none;
+}
+
+.arrow-orange {
+  width: 32px;
+  vertical-align: middle;
+}
+
+.blog-entry-content p {
+  margin-bottom: 25px;
+}
+
+
+
+h3.cs-title {
+  color: $white;
+  text-decoration: none;
+}
+
+#lightbox-form h3.gform_title {
+  text-align: center;
+  color: $green;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h1.entry-title.service-heading {
+  margin: 0px;
+  margin-bottom: 25px;
+}
+
+p#breadcrumbs {
+  display:block;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 15px;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 0 10%;
+
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+}
+
+.no-results-p {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 100px;
+  text-align: center;
+}

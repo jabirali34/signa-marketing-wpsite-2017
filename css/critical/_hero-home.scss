@@ -1,0 +1,337 @@
+/*--------------------------------------------------------------
+## Homepage Header
+--------------------------------------------------------------*/
+
+.goto-anchor {
+  position:absolute;
+  bottom:0;
+  z-index:3;
+  width: 100%;
+  left: 0;
+  text-align: center;outline: none;
+  padding-top: 40px;
+}
+
+.banner {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  background-size: cover;
+}
+
+.no-webp .banner {
+  background: url(/wp-content/uploads/home-banner-image@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.webp .banner {
+  background: url(/wp-content/themes/signa-2017/images/home-banner-image@2x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.banner-content-wrapper,
+.banner-video,
+.banner-video-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner-video-filter {
+  z-index: 1;
+  background-color: rgba(119, 133, 157, .5);
+}
+.banner-video {
+  z-index: 0;
+}
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.home-banner {
+  height: 420px;
+  margin: 0;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.content-default-home {
+  padding-top: 0;
+}
+.content-home {
+  height: 100%;
+}
+.banner-content-wrapper {
+  z-index: 2;
+  overflow: hidden;
+}
+.intro h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 3vw;
+}
+h1.home-heading {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 3vw;
+  text-align: center;
+  color: #ffffff;
+  max-width: 1400px;
+  margin: auto;
+}
+.home-heading span {
+  font-weight: 600;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.container-upcity {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.home-banner .intro {
+  height: 100%;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+
+@media (min-width: 992px) {
+  .home-banner {
+      height: 650px;
+      padding-top: 135px;
+  }
+  .home-banner .heading {
+      font-size: 46px;
+      width: auto;
+      height: 423px;
+  }
+  .home-banner .intro {
+      padding-top: 100px;
+  }
+}
+
+@media (max-width: 640px) {
+  h1.home-heading {
+      font-size: 32px;
+  }
+}
+
+// Blog Hero
+.blog-entry-content {
+  width:800px;
+  margin: 0 auto;
+  padding-top: 0px;
+}
+.blog-entry-content p{
+  font-weight:100;
+}
+header.entry-header.blog-intro {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  width:80%;
+  max-width:1400px;
+  margin:auto;
+}
+.blog-intro .entry-meta, .blog-intro .entry-meta a, .blog-intro .entry-meta a:hover, .blog-intro .entry-meta a:visited, .blog-intro .entry-meta a:active, .blog-intro .entry-meta a:focus {
+  font-weight:100;
+   color:#fff;
+   text-decoration: none;
+   font-style: italic;
+   font-size: 15px;
+}
+h1.single-blog-heading {
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 50px;
+   width:80%;
+   max-width: 1400px;
+   line-height: 1;
+   margin: auto;
+}
+
+/*--------------------------------------------------------------
+## Single Service Header
+--------------------------------------------------------------*/
+
+.fullpage-banner {
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+}
+.service-banner {
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  margin-bottom: 0px;
+}
+.banner-service-content-wrapper {
+  z-index: 2;
+  overflow: hidden;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+h1.service-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 70px;
+  width: 80%;
+  line-height: 1;
+}
+.service.heading span {
+  font-weight: 600;
+}
+.service-banner .intro {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 85px;
+}
+header.entry-header.service-intro {
+  padding: 50px 10% 75px 10%;
+  margin: auto;
+  margin-top: 100px;
+  overflow: hidden;
+
+  // p:first-of-type {
+  //   padding-bottom: 25px;
+  // }
+}
+header.cs-hero {
+  padding: 50px 10% 75px 10%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+@media(min-width: 768px) {
+  header.entry-header.service-intro {
+    padding: 120px 10% 120px 10%;
+    margin-top: 120px;
+  }
+
+  header.cs-hero {
+    padding: 120px 0px 120px 0px;
+    margin-top: 120px;
+  }
+}
+
+@media (max-width: 1180px) {
+  #header ul#primary-menu.open {
+    display: block;
+    opacity: 1;
+    height: 900px;
+    /* overflow: scroll; */
+  }
+  #header ul#primary-menu {
+    /* display: none; */
+    display: block;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.5s;
+    height: 0px;
+    overflow: hidden;
+  }
+}
+
+/*--------------------------------------------------------------
+## Case Study header
+--------------------------------------------------------------*/
+
+h1.case-study-heading {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 70px;
+  width: 100%;
+  line-height: 1;
+  color:#1e425d;
+}
+.case-study-banner {
+  height:100%;
+  background:none;
+}
+#header.case-study.navbar {
+  background: rgb(30, 66, 93);
+}
+
+@media(max-width: 768px) {
+  .banner-video {
+    display: none;
+  }
+}
+
+.banner-video {
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-video-container {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-image: none;
+}
+
+.homepage-video {
+  visibility: visible;
+  margin: auto; 
+  position: absolute;
+  z-index: -1; 
+  top: 50%; 
+  left: 0%; 
+  transform: translate(0%, -50%); 
+  width: 100%; 
+  height: auto;
+}
+.home-banner-new {
+  background: url(/wp-content/uploads/banner-hero-home.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1281px) and (min-width: 768px) {
+  h1.home-heading.amp-font-of-title {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: 1281px) {
+  h1.home-heading.amp-font-of-title {
+    font-size: 49px;
+  }
+}
+
+
+@media (max-width: 599) {
+  h2.stay-h2.form-heading {
+    line-height: 1.3 !important;
+  }
+}

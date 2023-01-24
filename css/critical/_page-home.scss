@@ -1,0 +1,667 @@
+/*--------------------------------------------------------------
+# GLOBAL
+--------------------------------------------------------------*/
+
+.bg-ltblue {
+  background: $ltblue;
+  color: $white;
+
+  h2, p, h4, h3 {
+    color: $white;
+  }
+}
+
+.page {
+  margin-bottom: 0px;
+}
+
+.f-content-row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.f-content-container {
+  padding: 60px 0px;
+  display: flex;
+  display:block\9;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin: auto;
+  max-width: 1400px;
+  width:80%;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; -JDJ This can be triggered @mobile to reposition content */
+}
+
+@media(min-width: 768px) {
+  .f-content-container {
+    padding: 80px 0px;
+  }
+}
+
+@media(max-width: 500px) {
+  .f-content-container {
+    width: 90%;
+  }
+}
+
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*--------------------------------------------------------------
+## Homepage Styles
+--------------------------------------------------------------*/
+.home-services {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.home-service a {
+  text-align: center;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 100;
+  font-family: 'Poppins', sans-serif;
+}
+.home-service.col-1 {
+  width: 33.333%;
+  float: left;
+  height: 291px;
+  overflow: hidden;
+}
+.home-service.col-2 {
+  width: 33.333%;
+  float: left;
+  height: 291px;
+  overflow: hidden;
+}
+.home-service.col-3 {
+  width: 33.333%;
+  float: right;
+  height: 291px;
+  overflow: hidden;
+}
+
+
+
+.home-service.col-1 .home-service-img {
+  background-size: cover;
+  height: 291px;
+  transition: all .8s;
+}
+.home-service.col-2 .home-service-img {
+  background-size: cover;
+  height: 291px;
+  transition: all .8s;
+}
+.home-service.col-3 .home-service-img {
+  background-size: cover;
+  height: 291px;
+  transition: all .8s;
+}
+
+
+
+.home-service-img:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.home-case-studies {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  margin-bottom: 120px;
+}
+.home-case-studies h2 {
+  font-style: normal;
+  font-size: 2.7rem;
+  text-align: center;
+}
+.home-case-study.col-1 {
+  width: 30%;
+  float: left;
+  height: auto;
+  margin-right: 5%;
+}
+.home-case-study.col-2 {
+  width: 30%;
+  float: left;
+  height: auto;
+  margin-right: 4%;
+}
+.home-case-study.col-3 {
+  width: 30%;
+  float: right;
+  height: auto;
+}
+
+/*-----------------------------------------------------
+CASE STUDIES CAROUSEL
+-----------------------------------------------------*/
+
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 80px 10% 80px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  text-decoration: none;
+}
+
+/* Caption text */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+// Case Studies Slider 
+.text {
+  font-weight: 300;
+  padding: 8px 0px;
+  position: relative;
+  bottom: 0;
+  width: 800px;
+  height: 100%;
+  margin-left: calc(50% - 400px);
+  text-align: center;
+}
+.fa-quote-left {
+  font-size: 15px;
+  line-height: 1;
+  margin-right: 4px;
+}
+.fa-quote-right {
+  font-size: 15px;
+  line-height: 1;
+  margin-left: 8px;
+}
+@media (max-width: 840px) {
+  .text {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    padding: 8px 0px;
+  }
+}
+
+.text > h2 + p::before {
+  content: "";
+  margin-right: 4px;
+  background-image: url('/wp-content/themes/signa-2017/images/icons/quote-left-solid.svg');
+  background-size: 15px;
+  padding-right: 20px;
+  padding-top: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text > h2 + p::after {
+  content: "";
+  margin-left: 4px;
+  background-image: url('/wp-content/themes/signa-2017/images/icons/quote-right-solid.svg');
+  background-size: 15px;
+  padding-left: 20px;
+  padding-top: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h2.hp-case-study {
+  font-weight: 100;
+  font-weight: 700;
+  color:#383838;
+}
+.case-studies-span {
+  font-size: 16px;
+  color:#383838;
+  font-weight:800;
+}
+.case-studies-p {
+  font-size: 16px;
+  color:#383838;
+}
+
+@media (max-width: 767px) {
+  .home-service.col-1,
+  .home-service.col-2,
+  .home-service.col-3 {width: 100%; height: 220px;}
+  .home-service a { font-size: 1.8rem; top: calc(50% - 33px);}
+  .home-case-study.col-1,
+  .home-case-study.col-2,
+  .home-case-study.col-3 {
+      width: 100%;
+      text-align: center;
+      margin: 0;
+  }
+}
+@media (max-width: 700px) {
+  .case-studies-span {
+      font-size: 16px;
+  }
+  .case-studies-p {
+      font-size: 14px;
+  }
+}
+@media(max-width: 1024px) {
+  .blog-half {
+    flex: 0 0 100%;
+  }
+
+  div#comments {
+    width: 80% !important;
+    margin: 0 auto;
+  }
+
+  .blog-entry-meta {
+    margin-bottom: 50px;
+  }
+
+  .blog-entry-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+  .blog-half:first-of-type {
+    padding-right: 0px;
+  }
+}
+
+/*--------------------------------
+RECENT POSTS
+---------------------------------*/
+.blog-entry-content h2 { 
+  margin-top: 1.5em;
+}
+div#recent-posts-widgets {
+  display: inline-block;
+  width: 100%;
+  padding: 50px 10%;
+}
+
+@media(min-width: 768px) {
+  div#recent-posts-widgets {
+    padding: 60px 10%;
+  }
+}
+
+div#recent-posts {
+  width: 1400px;
+  max-width:100%;
+  margin: auto;
+}
+.recent-post-thumbnail {
+  float: left;
+  width: 33%;
+  padding: 0;
+  text-align: center;
+  margin: 25px 0px;
+} 
+
+@media(min-width: 768px) {
+  .recent-post-thumbnail {
+    padding: 0 3%;
+    margin: 50px 0px;
+  }
+}
+
+a.recent-posts-title {
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: .065em;
+  color: #38739e;
+  font-weight:700;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  float: none;
+  display: block;
+  text-decoration: none;
+  transition: color .3s;
+}
+.recent-posts-date {
+  font-size: 10px;
+  letter-spacing: .1em;
+  color: #7e8890;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 28px;
+}
+.recent-post-thumbnail img {width:100%;}
+/*---------------------------------
+AJAX LOAD MORE
+---------------------------------*/
+[data-id="blog1"]  {
+  width: 1400px;
+  margin: auto;
+  margin-top: 75px;
+}
+.blog-page-item-container li {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 100px;
+  height: 621px;
+}
+.blog-page-item-container img {
+  position: relative !important;
+  width: 100%;
+  margin-bottom: 8px;
+}
+#blog-date-text {    font-size: 10px;
+  letter-spacing: .1em;
+  color: #7e8890;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align:center;
+  margin-bottom: 15px;
+  margin-top: 28px;}
+
+
+@media (min-width:1700px) { .post-33-container {width: 25%; }}    
+
+@media (max-width: 1200px) {
+  [data-id="blog1"]{width:90%;}
+  div#recent-posts { width: 100%; margin: auto; }
+}
+@media (max-width:917px)  {.post-33-container {width: 50%; }}
+@media (max-width: 900px) {
+  .blog-page-item-container li{width:50%;}
+  .recent-post-thumbnail { width: 100%; }
+}
+
+@media only screen and (max-width:840px) {   .blog-entry-content { width: 80%; }}
+
+@media only screen and (max-width:767px) {
+  .blog-tabs {
+    float: none;
+    margin: auto;
+    text-align: center;
+    width:100%;
+  }
+  .mobile-tabs {
+    float: none;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+  .blog-tabs span {
+    float: none;
+  }
+  .blog-tabs a {
+    float: none;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .blog-sidebar {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  .search-form .search-submit {
+    float:left; width:32px;
+  }
+  .search-form .search-field {
+    float:none;
+    width: calc(100% - 32px);
+    padding:0px;
+  }
+}
+
+.services-outer-wrapper {
+  background-color: $lite_bg_grey;
+
+  .f-content-container.f-col-50 {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  h2.service-title {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+    color: #404040;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1142px) {
+  .services-outer-wrapper .f-content-container.f-col-50 {
+    justify-content: center !important;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+
+.service-item {
+  margin: 0px;
+  max-width: 100%;
+  width: 300px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: block;
+  padding: 5px 15px;
+
+  @media (max-width: 1142px) {
+    padding: 20px 15px;
+    text-align: center;
+  }
+}
+
+/********* COMPETITIVE ANALYSIS CTA CARD *********/
+// Competitive Analysis
+#ca-cta-card-container {
+  position: relative;
+  width:90%;
+  margin:auto;
+
+  @media (min-width: 500px){
+    width:1170px;
+    max-width:90%;
+  }
+}
+#ca-cta-card {
+  background: #ffffff;
+  box-shadow: 0px 4px 9px rgba(12, 12, 12, 0.35);
+  box-shadow: 0px 0px 9px rgba(0,0,0,0.35);
+  text-align:center;
+  margin: 0 auto;
+  padding: 30px 30px;
+
+  @media(min-width:768px){
+    background-image: url("/wp-content/themes/signa-2017/images/competitive-analysis-cta-box-bg-2.jpg");
+    background-size: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    text-align: left;
+    padding: 50px 60px 60px 60px;
+  }
+  @media(min-width:1440px){
+    padding: 50px 120px 60px 120px;
+  }
+
+  div {
+    @media(min-width:768px) and (max-width:1440px){
+      width:930px;
+      max-width:100%;
+      margin:auto;
+    }
+
+  }
+
+  h2 {
+    text-transform: none !important;
+    
+    margin-bottom: 15px !important;
+    color: #1e425d;
+    font-size: 30px;
+
+    @media(min-width:768px){
+      font-size: 40px;
+    }
+  }
+
+  .services-outer-wrapper .f-content-container.f-col-50.mobile-custom-col.flexed {
+    width: 1200px;
+    max-width: 100%;
+  }
+
+  p {
+    color: #1e425d;
+    max-width: 580px;
+    margin-bottom: 25px;
+    font-weight: 400;
+  }
+
+  a {
+    padding: 18px 18px;
+    width: 358px;
+    max-width: 100%;
+    text-align: center;
+    height: auto;
+  }
+}
+
+/********** AWARDS ROW ***********/
+h2.trusted-by {
+  color: #404040 !important;
+  font-style: normal !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  line-height: 45px !important;
+  margin-bottom: 30px;
+}
+
+.awards-row.trusted-logos img {
+  max-height: 86px;
+}
+.awards-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 1004px;
+  max-width: 100%;
+
+  @media (min-width: 860px) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:65px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+    &.trusted-logos {margin-bottom:0px;}
+  }
+
+  h2 {
+    margin-bottom: 40px;
+
+    @media (min-width: 860px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  img {
+    max-height: 168px;
+    width: auto;
+    max-width: 280px;
+    margin-bottom: 30px;
+    
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    @media (min-width: 860px) {
+      max-width: 33%;
+      margin-bottom: 0px;
+      padding: 0 4px;
+    }
+  }
+  
+  &.trusted-logos {
+    margin-top: 0px !important;
+  }
+}
+
+
+.awards-row.award-winning {
+  width: 842px;
+  padding-left: 0;
+  padding-right: 0;
+
+  @media (min-width: 860px) {
+    img {
+      padding: 0;
+      max-width: 200px;
+  }
+  }
+}

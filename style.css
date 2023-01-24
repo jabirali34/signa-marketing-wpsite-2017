@@ -1,0 +1,49 @@
+/*
+Theme Name: Signa 2017
+Theme URI: http://underscores.me/
+Author: Signa Marketing
+Author URI: https://www.signamarketing.com
+Description: Signa Marketing 2017 WordPress Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: signa-2017
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Signa 2017 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+.home-banner-new {
+  background: url(/wp-content/uploads/banner-hero-home.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat;
+}
+
+.blog-entry-content p {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.9;
+  font-size: 20px;
+  color: #1a1a1a;
+  overflow-wrap: break-word;
+  margin-bottom: 25px;
+}
+
+.blog-entry-content h2 {
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+
+.blog-entry-content h3 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.blog-entry-content ul li {
+  margin-bottom: 20px;
+}

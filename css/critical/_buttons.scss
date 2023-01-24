@@ -1,0 +1,287 @@
+// Button Globals
+// $btn-font-size: 0.842em;
+
+input#mc-embedded-subcribe {
+  border-radius: none;
+}
+
+// Home Page Blog Button also exists on inner page stylesheet & footer stylesheet
+.view-our-blog-btn {
+  text-align: center;
+  width: 100%;
+  clear: both;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .view-our-blog-btn {
+    margin-top: 25px;
+  }
+}
+
+// Global Button Styles Mixin
+@mixin globalButton {
+  text-decoration: none;
+  padding: 17px 60px;
+  transition: all 0.15s;
+  text-align: center;
+  font-size: 19px;
+  display: inline-block;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+// Specific Button Styles
+a.green-learn-button {
+  @include globalButton();
+  background-color: transparent;
+  color: $green;
+  border: solid 2px $green;
+
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+}
+
+a.white-learn-button {
+  @include globalButton();
+  background-color: none;
+  color: #fff;
+  border: solid 2px #fff;
+
+  &:hover {
+    background-color: $white;
+    color: $blue;
+    border-color: $white;
+  }
+
+  &:visited {
+    color: $white;
+  }
+}
+
+.btn-white {
+  @include globalButton();
+  background-color: none;
+  color: $white;
+  border: solid 2px $white;
+
+  &:hover {
+    background-color: $white;
+    color: $blue;
+    border-color: $white;
+  }
+}
+
+input.green-learn-button {
+  @include globalButton();
+  background-color: transparent;
+  color: $green;
+  border: solid 2px $green;
+  padding: 19px 60px;
+  border-radius: 0px;
+  box-shadow: none;
+
+  &:hover {
+    background-color: $green;
+    color: $white;
+    border-color: $green;
+    box-shadow: none;
+  }
+}
+
+.button-block {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .button-block {
+    margin-bottom: 50px;
+  }
+}
+
+.careers-btn {
+  float: right;
+
+  @media (max-width: 900px) {
+    float: left;
+  }
+}
+
+.btn-apply {
+  background-color: transparent;
+  color: $green;
+  border: 2px solid $green;
+  padding: 17px 60px;
+  text-transform: capitalize;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: ease 300ms;
+
+  &:hover {
+    background: $green;
+    color: $white;
+    border: 2px solid $green;
+  }
+}
+
+.btn-apply-invert {
+  background-color: $green;
+  color: $white;
+  border: 2px solid $green;
+  padding: 17px 60px;
+  text-transform: capitalize;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: ease 300ms;
+
+  &:hover {
+    background: $white;
+    color: $green;
+    border: 2px solid $white;
+  }
+}
+
+//Ajax Load More Button
+button.alm-load-more-btn.more.load-more-ajax,
+button.alm-load-more-btn.more.load-more-ajax.loading {
+  @include globalButton();
+  background-color: transparent;
+  color: $blue;
+  border: solid 2px $blue;
+  height: auto !important;
+  border-radius: 0 !important;
+
+  &:hover {
+    background-color: $blue;
+    color: $white;
+  }
+}
+
+a.blue-learn-button.services-list {
+  margin-top: 35px;
+  font-weight: 500;
+  width: 250px;
+  max-width: 100%;
+}
+
+.ajax-load-more-wrap.blue .alm-load-more-btn.done,
+.ajax-load-more-wrap.blue .alm-load-more-btn.loading,
+.ajax-load-more-wrap.blue .alm-load-more-btn:hover {
+  background-color: $blue;
+  color: $white;
+  border-radius: 0 !important;
+}
+
+.alm-btn-wrap .alm-load-more-btn.loading:before {
+  background: none !important;
+}
+
+button.alm-load-more-btn.more.load-more-ajax.done {
+  display: none;
+}
+
+
+
+.btn {
+  padding: 19px 12px !important;
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+  transition: all 0.15s;
+  font-size: 19px;
+  line-height: 28px;
+  margin-bottom: 0px;
+  display: inline-block;
+  text-shadow: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border-radius: 0px !important;
+
+  &.small {
+    width:auto;
+    max-width:100%;
+    // padding: 19px 25px !important;
+    padding: 12px 30px !important;
+    font-weight:normal;
+  }
+  &.medium {
+    width:270px;
+    max-width: 100%;
+    @media(min-width:768px){
+      min-width:250px;
+    }
+    
+  }
+}
+
+// ORANGE BUTTON STATES
+.btn.orange {
+  color: #fff !important;
+  background-color: #F2702A !important;
+  border: 2px solid $orange !important;
+
+  &:hover:not(.no-hover) {
+    color: $orange !important;
+    background-color: $white !important;
+  }
+
+  &.inverse {
+    background: transparent !important;
+    color: $orange !important;
+
+    &:hover:not(.no-hover) {
+      background: $orange !important;
+      color: white !important;
+    }
+  }
+}
+
+.btn.blue {
+  color: #fff !important;
+  background-color: $blue !important;
+  border: 2px solid $blue !important;
+
+  // &:hover:not(.no-hover) {
+  //   color: $blue !important;
+  //   background-color: $white !important;
+  // }
+
+  &.inverse {
+    background: transparent !important;
+    color: $blue !important;
+
+    &:hover:not(.no-hover) {
+      background: $blue !important;
+      color: white !important;
+    }
+  }
+}
+
+.btn.green {
+  color: #fff !important;
+  background-color: #0E8E8C !important;
+  border: 2px solid $green !important;
+
+  &:hover:not(.no-hover) {
+    color: $green !important;
+    background-color: $white !important;
+  }
+
+  &.inverse {
+    background: transparent !important;
+    color: $green !important;
+
+    &:hover:not(.no-hover) {
+      background: $green !important;
+      color: white !important;
+    }
+  }
+}
+a.btn-white.btn.medium.home-cta-case-study {
+  min-width: 280px;
+}

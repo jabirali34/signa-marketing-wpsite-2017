@@ -1,0 +1,211 @@
+
+
+
+.workus-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0px;
+    max-width: 1400px;
+    width: 80%;
+    margin:  auto;
+
+    .lead-form-wrapper{
+        width: 50%;
+        padding: 50px 4%;
+        text-align: left;
+        background-color: #F7F7F7;
+        box-shadow: 0 0 10px 8px rgba(0,0,0,0.06);
+
+        .form-title{
+            font-size: 34px;
+            line-height: 40px;
+            font-weight: bold;
+            color: #1E425D;
+            margin-bottom: 18px;
+            padding-left: 8px;
+        }
+        .form-text{
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 40px;
+            padding-left: 8px;
+        }
+        .form-check{
+            text-align: left !important;
+        }
+    
+    }
+
+    .workus-right-content{
+        width: 50%;
+        padding: 50px 5% 0 5%;
+
+        .workus-title{
+            font-size: 42px;
+            line-height: 48px;
+            font-weight: bold;
+            color: #1E425D;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .workus-text{
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 50px;
+            width: auto;
+            height: auto;
+            text-align: left;
+        }
+        .list{
+            padding-left: 35px;
+            .list-item{
+                font-size: 18px;
+                line-height: 24px;
+                color: #404040;
+                font-weight: 300;
+                margin-bottom: 18px;
+                list-style-type: none;
+                position: relative;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: 4px;
+                    left: -35px;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(https://www.dev.signamarketing.com/wp-content/uploads/image-11.png);
+
+                }
+                &:last-child{
+                    margin: 0;
+                }
+            }
+            span{
+                font-weight: normal;
+            }
+            
+        }
+    }
+
+    @media (max-width: 1200px) {
+
+        .workus-right-content{
+
+            .workus-title{
+                font-size: 36px;
+            }
+        }
+    }
+
+    @media (max-width: 1025px) {
+        // padding: 60px 40px;
+
+        .lead-form-wrapper{
+            width: 100%;
+
+            .form-title{
+                font-size: 28px;
+                line-height: 34px;
+            }
+        }
+        .workus-right-content{
+            width: 100%;
+            padding: 0 0 60px 0;
+            .workus-title{
+                font-size: 36px;
+                line-height: 42px;
+            }
+        }
+
+    }
+    @media (max-width: 768px) {
+        // padding: 60px 40px;
+
+        .lead-form-wrapper{
+
+            .form-title{
+                font-size: 1.7em;
+                line-height: 1;
+            }
+        }
+        .workus-right-content{
+
+            .workus-title{
+                font-size: 1.6em;
+                line-height: 1;
+            }
+        }
+
+    }
+
+}
+@media (max-width: 1180px) {
+    header.entry-header.workus-intro {
+        height: 80px !important;
+    }
+}
+@media (max-width: 1025px) {
+    .workus-wrapper {
+        flex-wrap: wrap;
+        padding: 60px 0px;
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width: 768px) {
+    .workus-wrapper {
+       width: 90%;
+    }
+}
+
+
+
+div[id^="gform_wrapper"] .workus-gravity-form li[id^="field"] {
+    width: 50%;
+}
+
+[id^="gform_wrapper"] .workus-gravity-form .gform_footer input[type="submit"] {
+    width: 120px;
+    color: #fff !important;
+    background-color: #F2702A !important;
+    border: 2px solid #ff8644 !important;
+    padding: 10px 25px !important;
+    font-size: 16px !important;
+    margin-left: 8px !important;
+}
+[id^="gform_wrapper"] .workus-gravity-form .gform_footer input[type="submit"]:hover {
+    color: #ff8644 !important;
+    background-color: #fff !important;
+}
+#gform_wrapper #field_23_7{
+    text-align: left !important;
+    padding-left: 8px;
+}
+
+.gform_wrapper .workus-gravity-form input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+    font-weight: 300 !important;
+}
+
+.gform_wrapper .workus-gravity-form ul.gfield_checkbox li input[type="checkbox"] + label {
+    font-weight: 300 !important;
+  }
+
+header.entry-header.workus-intro {
+    padding: 0;
+    margin-top: 0;
+    height: 120px;
+}
+
+@media (max-width: 475px) {
+    div[id^="gform_wrapper"] .workus-gravity-form li[id^="field"] {
+        width: 100%;
+    }
+    [id^="gform_wrapper"] .workus-gravity-form .gform_footer input[type="submit"] {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    [id^="gform_wrapper"] .workus-gravity-form .gform_footer{
+        padding: 0 10px !important;
+    }
+}
